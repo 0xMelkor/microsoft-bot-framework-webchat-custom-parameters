@@ -41,7 +41,7 @@ var MyWebChat = function(params) {
 
     this.loadApplication = function() {
         /**
-         * Sends store information to the chatbot 
+         * Sends custom parameter to the chatbot 
          **/
         var sendCustomArg = function() {
             console.log('post message');
