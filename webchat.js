@@ -52,7 +52,7 @@ var MyWebChat = function(params) {
                     from: {
                         id: params['userid']
                     },
-                    name: "baseStore"
+                    name: "customArgName"
                 })
                 .subscribe(id => console.log("YOUR CUSTOM ARG HAS BEEN SENT"));
         }
