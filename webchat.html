@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="https://unpkg.com/botframework-webchat/botchat.css" rel="stylesheet" />
+  </head>
+<body>
+    <div id="botChat" class="wc-narrow"></div>
+</body>
+    <script src="https://unpkg.com/botframework-webchat/botchat.js"></script>
+    <script src="webchat.js"></script>
+	<script>
+        var webchatParams = {
+            userid:'userid',
+            username:'you',
+            botid: '<YOUR_BOT_ID>',
+            botname:'<YOUR_BOT_NAME>',
+            targetElement: 'botChat', // html element where the webchat gets rendered
+            s: '<YOUR_BOT_SECRET>',
+            customArg: '<YOUR_CUSTOM_ARG>'
+        };   
+          new HervisWebChat(webchatParams).loadApplication();
+    </script>
+</html>
